@@ -1,0 +1,4 @@
+SELECT rank, COUNT(*) AS NrSail 
+    FROM Sailors
+    GROUP BY rank 
+    HAVING COUNT(*)>1;

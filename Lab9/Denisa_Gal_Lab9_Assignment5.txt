@@ -1,0 +1,6 @@
+SELECT *  
+	FROM Sailors  
+	WHERE rank > ANY  
+		(SELECT rank 
+			FROM Sailors 
+			WHERE name='Horace');

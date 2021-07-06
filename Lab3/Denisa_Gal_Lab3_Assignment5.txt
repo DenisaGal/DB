@@ -1,0 +1,2 @@
+DELETE FROM Students_v2 
+    WHERE year='4';

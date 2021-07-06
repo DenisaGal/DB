@@ -1,0 +1,9 @@
+SELECT  s.name   
+	FROM Sailors s 
+	WHERE  s.sid IN  
+		(SELECT r.sid 
+			FROM Reserves r 
+			WHERE r.bid IN
+            (SELECT b.bid 
+            FROM Boats b 
+            WHERE b.color='Blue' OR b.color='Green'));

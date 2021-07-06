@@ -1,0 +1,4 @@
+SELECT sid, COUNT(*) AS nrBoats 
+    FROM Reserves
+    GROUP BY sid
+    HAVING COUNT(*)>:NOOFRESERVEDBOATS;

@@ -1,0 +1,9 @@
+SELECT s.name
+	FROM Sailors s 
+	WHERE NOT EXISTS  
+		((SELECT b.bid
+            FROM  Boats b)    
+		MINUS
+		SELECT r.bid
+			FROM Reserves r 
+			WHERE r.sid=s.sid);

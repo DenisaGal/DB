@@ -1,0 +1,5 @@
+Column Name,Data Type,Nullable,Default,Primary Key
+RID,NUMBER,Yes,,
+NAME,CHAR(5),Yes,,
+ADDRESS,CHAR(36),Yes,,
+CAPACITY,NUMBER,Yes,,

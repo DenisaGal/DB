@@ -1,0 +1,7 @@
+SELECT s.sid, s.name
+	FROM  Sailors s, Boats b, Reserves r
+	WHERE s.sid=r.sid AND r.bid=b.bid AND b.color=:COLOR1
+MINUS
+SELECT s.sid, s.name
+	FROM  Sailors s, Boats b, Reserves r
+	WHERE s.sid=r.sid AND r.bid=b.bid AND b.color=:COLOR2;

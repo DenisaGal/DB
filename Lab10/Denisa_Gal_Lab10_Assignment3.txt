@@ -1,0 +1,7 @@
+SELECT s.sid
+	FROM  Sailors s, Boats b, Reserves r
+	WHERE s.sid=r.sid AND r.bid=b.bid AND b.color='Red'
+INTERSECT 
+SELECT s.sid
+	FROM  Sailors s, Boats b, Reserves r
+	WHERE s.sid=r.sid AND r.bid=b.bid AND b.color='Green';

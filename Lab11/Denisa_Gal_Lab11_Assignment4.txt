@@ -1,0 +1,2 @@
+SELECT MIN(age) AS ageOfYoungestSailor, MAX(age) AS ageOfOldestSailor 
+    FROM Sailors;

@@ -1,0 +1,23 @@
+UPDATE Students_v2 
+    SET year=year+1
+    WHERE year<4 AND sid='IS04';
+
+UPDATE Students_v2 
+    SET year=year+1
+    WHERE year<4 AND sid='CTI-RO6';
+
+UPDATE Students_v2 
+    SET year=year+1
+    WHERE year<4 AND sid='Info3';
+
+UPDATE Students_v2 
+	SET year=year+1
+	WHERE year<4 AND sid='IS3';
+
+UPDATE Students_v2 
+    SET year=year+1
+    WHERE year<4 AND sid='IS40';
+
+UPDATE Students_v2 
+	SET year=year-1
+	WHERE year>1;

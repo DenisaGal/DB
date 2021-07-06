@@ -1,0 +1,8 @@
+SELECT * 
+	FROM Persons 
+	WHERE dep_id=1; 
+
+
+SELECT * 
+	FROM Persons  
+	WHERE name LIKE 'J%' AND dep_id=1;

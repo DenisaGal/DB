@@ -1,0 +1,2 @@
+SELECT VARIANCE(age) AS varAge, STDDEV(age) AS stddevAge
+    FROM Sailors;

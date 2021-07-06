@@ -1,0 +1,4 @@
+SELECT *
+    FROM Orders
+    WHERE  value >= (SELECT MAX(value) 
+                        FROM Orders);

@@ -1,0 +1,6 @@
+SELECT *
+	FROM Sailors s
+	WHERE NOT EXISTS  
+		(SELECT *
+			FROM Reserves r 
+			WHERE r.sid=s.sid AND EXTRACT(YEAR FROM r.rdate)=:ifYear);

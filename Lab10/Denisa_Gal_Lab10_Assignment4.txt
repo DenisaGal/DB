@@ -1,0 +1,7 @@
+SELECT s.name
+	FROM  Sailors s
+	WHERE s.rank=7
+INTERSECT 
+SELECT s.name
+	FROM  Sailors s
+	WHERE s.rank=9;

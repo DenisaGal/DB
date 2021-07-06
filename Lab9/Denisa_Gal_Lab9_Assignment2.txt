@@ -1,0 +1,6 @@
+SELECT DISTINCT s.sid, s.name
+	FROM Sailors s, Boats b, Reserves r
+	WHERE s.sid=r.sid AND r.bid=b.bid AND b.color = 'Blue' AND s.sid IN
+		(SELECT s1.sid
+			FROM Sailors s1, Boats b1, Reserves r1
+			WHERE s1.sid=r1.sid AND r1.bid=b1.bid AND b1.color='Green');

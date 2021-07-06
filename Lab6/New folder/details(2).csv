@@ -1,0 +1,7 @@
+Column Name,Data Type,Nullable,Default,Primary Key
+CID,CHAR(255),Yes,,
+NAME,CHAR(255),Yes,,
+CREDITS,NUMBER,Yes,,
+DEPARTMENT,CHAR(255),Yes,,
+PREQ_COURSES,NUMBER,Yes,,
+STUDENTS_YEAR,CHAR(255),Yes,,

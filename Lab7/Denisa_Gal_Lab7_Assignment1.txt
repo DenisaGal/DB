@@ -1,0 +1,10 @@
+SELECT id AS PersonID, name 
+	FROM Persons; 
+
+
+SELECT DISTINCT name 
+	FROM Persons; 
+
+
+SELECT * 
+	FROM Persons; 

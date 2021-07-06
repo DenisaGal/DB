@@ -1,0 +1,3 @@
+SELECT p.*, d.*  
+	FROM Persons p, Departments d 
+	WHERE p.dep_id = d.id;

@@ -1,0 +1,19 @@
+Students (sid: string, name: string, year: integer, did: string)
+
+CREATE TABLE Students (
+    sid CHAR(255) PRIMARY KEY,
+    name CHAR(255),
+    year INTEGER,
+    did CHAR(510)
+)
+
+Courses (cid: string, name: string, credits: integers, department: string, preq_courses: integer, students_year: string)
+
+CREATE TABLE Courses (
+	cid CHAR(255) PRIMARY KEY, 
+	name CHAR(255), 
+	credits INTEGER, 
+	department CHAR(255), 
+	preq_courses INTEGER, 
+	students_year CHAR(255)
+)

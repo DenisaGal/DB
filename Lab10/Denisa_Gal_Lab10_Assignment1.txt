@@ -1,0 +1,5 @@
+SELECT 'sailor', name 
+	FROM Sailors  
+UNION  
+SELECT 'boat', name 
+	FROM Boats;

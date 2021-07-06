@@ -1,0 +1,5 @@
+SELECT *  
+	FROM Sailors
+	WHERE rank >= ALL  
+		(SELECT rank
+			FROM Sailors);

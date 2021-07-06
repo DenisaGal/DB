@@ -1,0 +1,5 @@
+UPDATE Orders
+    SET value = value - 0.03*value
+    WHERE aid IN (SELECT o.aid 
+    				FROM Clients c, Accounts a, Orders o 
+    				WHERE c.age >= 18 and c.age <= 24 and c.cid = a.cid and a.aid = o.aid);

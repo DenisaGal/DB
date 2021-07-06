@@ -1,0 +1,5 @@
+Column Name,Data Type,Nullable,Default,Primary Key
+SID,CHAR(255),Yes,,
+NAME,CHAR(255),Yes,,
+YEAR,NUMBER,Yes,,
+DID,CHAR(510),Yes,,

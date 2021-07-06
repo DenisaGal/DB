@@ -1,0 +1,24 @@
+SELECT c.name, (o.value-0.03*o.value) as DiscountedValue
+    FROM Clients c, Accounts a, Orders o 
+    WHERE c.age >= 18 and c.age <= 24 and c.cid = a.cid and a.aid = o.aid
+
+UPDATE Orders
+SET value=(value-0.03*value)
+WHERE (SELECT *
+        FROM Clients c, Accounts a, Orders o 
+        WHERE c.age >= 18 and c.age <= 24 and c.cid = a.cid and a.aid = o.aid);
+
+CREATE TRIGGER Give_discount 
+    AFTER INSERT
+    ON Orders 
+    [for each row]  
+    value = value - 0.03*value
+
+
+SELECT Clients.Name, Clients.Address, Orders.ODate
+    FROM ((Orders INNER JOIN Accounts ON Accounts.aid = Orders.aid) INNER JOIN Clients ON Accounts.cid = Clients.cid)
+    WHERE Orders.ODate = (SELECT CURRENT_DATE FROM DUAL);
+
+SELECT Clients.Name, Clients.Address, Orders.ODate
+    FROM ((Orders INNER JOIN Accounts ON Accounts.aid = Orders.aid) INNER JOIN Clients ON Accounts.cid = Clients.cid)
+    WHERE Orders.ODate IN (SELECT CURRENT_DATE FROM DUAL);

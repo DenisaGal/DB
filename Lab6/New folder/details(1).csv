@@ -1,0 +1,7 @@
+Column Name,Data Type,Nullable,Default,Primary Key
+ID,NUMBER,No,,1
+NAME,VARCHAR2(50),Yes,,
+EMAIL,VARCHAR2(50),Yes,,
+NASTERE,DATE,Yes,,
+SEX,CHAR(1),Yes,,
+DEP_ID,NUMBER,Yes,,

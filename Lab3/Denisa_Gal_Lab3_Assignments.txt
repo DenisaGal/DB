@@ -1,0 +1,60 @@
+Activity 1: It did not involve commands
+
+Activity 2:
+
+	SELECT * 
+	    FROM Students;
+
+	SELECT * 
+	    FROM Students_v2;
+
+	 SELECT * 
+	    FROM Courses;
+
+Activity 3:
+
+	INSERT INTO Students_v2 
+	    VALUES ('CTI-RO6', 'Ana Maria', '1', 'CTI-RODeva06');
+
+	INSERT INTO Students_v2 
+	    VALUES ('IS04', 'Dan Floare', '1', 'ISMures06');  
+
+	INSERT INTO Students_v2 (sid, name, year, did)
+	    VALUES ('Info3', 'Daisy Duck', '3', 'INFOOradea33');
+
+	INSERT INTO Students_v2 (sid, name, year)
+	    VALUES ('IS3', 'Ducky Duck', '4');
+
+	INSERT INTO Students_v2 (name, year)
+	    VALUES ('Goofy', '4');                  //gives error due to not having the sid (primary key) column -> cannot insert NULL into...
+
+	INSERT INTO Students_v2 (sid, name, year)
+	    VALUES ('IS40', 'Goofy the Dog', '4');
+
+Activity 4:
+	UPDATE Students_v2 
+	    SET year=year+1
+	    WHERE sid='IS04';
+
+	UPDATE Students_v2 
+	    SET year=year+1
+	    WHERE sid='CTI-RO6';
+
+	UPDATE Students_v2 
+	    SET year=year+1
+	    WHERE sid='Info3';
+
+	UPDATE Students_v2 
+		SET year=year+1
+		WHERE sid='IS3';
+
+	UPDATE Students_v2 
+	    SET year=year+1
+	    WHERE sid='IS40';
+
+	UPDATE Students_v2 
+    	SET year=year-1;
+
+Activity 5:
+	DELETE FROM Students_v2 
+    	WHERE year='4'; 

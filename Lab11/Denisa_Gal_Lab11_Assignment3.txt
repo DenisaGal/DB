@@ -1,0 +1,2 @@
+SELECT SUM(age)/COUNT(*) AS sumCountAvg, AVG(age)  AS avgAvg
+	FROM Sailors;

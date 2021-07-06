@@ -1,0 +1,6 @@
+SELECT *
+	FROM Sailors s
+	WHERE EXISTS  
+		(SELECT *
+			FROM Reserves r 
+			WHERE r.sid=s.sid);

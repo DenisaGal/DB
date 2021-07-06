@@ -1,0 +1,5 @@
+SELECT s.Sid, s.Name, r.rdate, r.Bid, b.Name AS BName
+    FROM ((Sailors s RIGHT JOIN Reserves r
+	ON s.sid=r.sid) INNER JOIN Boats b
+	  ON r.bid=b.bid)
+    WHERE b.color=:BOAT_COLOR;

@@ -1,0 +1,6 @@
+SELECT *  
+	FROM Sailors
+	WHERE age <= ALL  
+		(SELECT age
+			FROM Sailors
+            WHERE age IS NOT NULL);

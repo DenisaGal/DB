@@ -1,0 +1,3 @@
+SELECT *
+    FROM Persons
+    WHERE dep_id=:D_ID

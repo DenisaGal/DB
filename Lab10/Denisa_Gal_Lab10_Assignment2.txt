@@ -1,0 +1,7 @@
+SELECT 'sailor', name 
+	FROM Sailors
+    WHERE rank = 1  
+UNION
+SELECT 'person', name 
+	FROM Persons
+    WHERE dep_id=1;

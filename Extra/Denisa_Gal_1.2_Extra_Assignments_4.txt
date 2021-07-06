@@ -1,0 +1,4 @@
+SELECT Clients.Name, Orders.Value
+    FROM ((Orders INNER JOIN Accounts ON Accounts.aid = Orders.aid) INNER JOIN Clients ON Accounts.cid = Clients.cid)
+    GROUP BY Orders.Value, Clients.Name
+    HAVING Orders.Value < 0;

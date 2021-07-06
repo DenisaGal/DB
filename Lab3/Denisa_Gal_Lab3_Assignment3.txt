@@ -1,0 +1,17 @@
+INSERT INTO Students_v2 
+	VALUES ('CTI-RO6', 'Ana Maria', '1', 'CTI-RODeva06');
+
+INSERT INTO Students_v2 
+    VALUES ('IS04', 'Dan Floare', '1', 'ISMures06');  
+
+INSERT INTO Students_v2 (sid, name, year, did)
+    VALUES ('Info3', 'Daisy Duck', '3', 'INFOOradea33');
+
+INSERT INTO Students_v2 (sid, name, year)
+    VALUES ('IS3', 'Ducky Duck', '4');
+
+INSERT INTO Students_v2 (name, year)
+    VALUES ('Goofy', '4');                  //this gives an error due to not having the sid (primary key) column -> cannot insert NULL into...
+
+INSERT INTO Students_v2 (sid, name, year)
+    VALUES ('IS40', 'Goofy the Dog', '4');

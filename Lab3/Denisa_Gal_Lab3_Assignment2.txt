@@ -1,0 +1,8 @@
+SELECT * 
+	    FROM Students;
+
+	SELECT * 
+	    FROM Students_v2;
+
+	 SELECT * 
+	    FROM Courses;

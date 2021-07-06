@@ -1,0 +1,2 @@
+SELECT AVG(age)-STDDEV(age) AS lowerBound, AVG(age)+STDDEV(age) AS upperBound
+    FROM Sailors;

@@ -1,0 +1,8 @@
+SELECT * 
+	FROM Sailors
+	WHERE age >
+		(SELECT s.age              
+			FROM Sailors s  
+				INNER JOIN 
+				Reserves r  ON s.sid=r.sid              
+			WHERE r.bid=102  AND  r.rdate='10/08/2014');

@@ -1,0 +1,1 @@
+It did not involve commands, just clicking on SQL Workshop, Object Browser and on the separate tables(table and data)

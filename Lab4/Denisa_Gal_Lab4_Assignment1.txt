@@ -1,0 +1,17 @@
+Departments (id: integer, name: string)
+
+CREATE TABLE Departments (
+    id INTEGER PRIMARY KEY,
+    name VARCHAR2(50)
+)
+
+Persons (id: integer, name: string, email: string, nastere: date, sex: char, dep_id: integer)
+
+CREATE TABLE Persons (
+    id INTEGER PRIMARY KEY,
+    name VARCHAR2(50),
+    email VARCHAR2(50),
+    nastere DATE,
+    sex CHAR,
+    dep_id INTEGER
+)
